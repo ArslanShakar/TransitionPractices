@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--Overwrite the default ripple effect grey color to custom color-->
+        <item name="colorControlHighlight">@android:color/holo_purple</item>
+
+        <!-- For shared Element Transition we must enable the window content transition either by java code or here xml-->
+      <!--  <item name="android:windowContentTransitions">true</item>-->
+
+        <!--  Prevents Overlapping of entering and existing activities transition either here or either in java code -->
+     <!--   <item name="android:windowAllowReturnTransitionOverlap">false</item> //by default its true
+        <item name="android:windowAllowEnterTransitionOverlap">false</item> //by default its true-->
+
+        <!--  for all of the activities we can set enter and exit transition  -->
+<!--        <item name="android:windowEnterTransition">@transition/silde_right</item>
+        <item name="android:windowExitTransition">@transition/slide_left</item>
+        <item name="android:windowReenterTransition">@transition/slide_left</item>-->
+
+
+    </style>
+
+</resources>

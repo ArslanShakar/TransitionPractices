@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Transition_Practices</string>
+    <string name="logo_shared">logo_shared</string>
+    <string name="company_name">company_name_shared</string>
+    <string name="user_image_shared">user_image_shared</string>
+    <string name="description">Welcome to Activity Shared Elemet Transition!  For more update Stay Tuned with Clime Soft. Thank you.</string>
+</resources>

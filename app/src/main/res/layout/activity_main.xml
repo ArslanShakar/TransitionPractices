@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ripple Effects"
+        android:onClick="moveToRippleActivity"
+        android:padding="24sp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#fc2ca9"
+        android:onClick="sharedElementTransitionOnClick"
+        >
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:transitionName="@string/logo_shared"
+            />
+        <TextView
+            android:id="@+id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clime Soft"
+            android:layout_marginStart="32dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:transitionName="@string/company_name"
+            />
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="72dp"
+            android:layout_height="85dp"
+            android:src="@drawable/uaer_profile"
+            android:layout_marginStart="32dp"
+            android:transitionName="@string/user_image_shared"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+
+        >
+        <TableRow android:layout_marginTop="8dp">
+            <TextView
+                android:text="Explode Transition"
+                android:layout_span="2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="By Java Code"
+                android:onClick="explodeTransitionByJavaCode"
+                />
+            <Button
+                android:text="By XML Code"
+                android:onClick="explodeTransitionByXML"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:text="Slide Transition"
+                android:layout_span="2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="By Java Code"
+                android:onClick="slideTransitionByJavaCode"
+                />
+            <Button
+                android:text="By XML Code"
+                android:onClick="slideTransitionByXML"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:text="Fade Transition"
+                android:layout_span="2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="By Java Code"
+                android:onClick="fadeTransitionByJava"
+                />
+            <Button
+                android:text="By XML Code"
+                android:onClick="fadeTransitionByXML"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

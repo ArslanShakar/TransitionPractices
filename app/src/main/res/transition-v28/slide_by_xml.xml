@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+<slide android:duration="@integer/anim_duration_long"
+    android:interpolator="@android:interpolator/fast_out_extra_slow_in"
+
+    ></slide>
+</transitionSet>
